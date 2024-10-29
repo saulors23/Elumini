@@ -1,2 +1,0 @@
-# Elumini
-Teste Técnico
