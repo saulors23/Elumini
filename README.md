@@ -1,32 +1,81 @@
-<<<<<<< HEAD
-# Elumini
-Teste Técnico
-=======
-# CdbCalculator
+# CDB Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Este projeto é uma aplicação Angular e .NET para cálculo de CDB, que permite calcular o valor bruto e líquido de um investimento com base nos dados fornecidos pelo usuário.
 
-## Development server
+## Estrutura do Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Frontend**: Angular (Elumini/src/`)
+- **Backend**: .NET Core API (Elumini/CDBCalculator/)
 
-## Code scaffolding
+## Pré-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para executar o projeto, você precisará ter instalados:
 
-## Build
+- **Node.js** (versão 14 ou superior)
+- **Angular CLI** (caso não tenha, instale com `npm install -g @angular/cli`)
+- **.NET Core SDK** (versão 6 ou superior)
+- **Git** (para versionamento e clonagem do projeto)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instruções de Execução
 
-## Running unit tests
+### 1. Clonando o Repositório
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Clone o repositório para sua máquina local:
 
-## Running end-to-end tests
+git clone https://github.com/saulors23/Elumini.git
+cd Elumini
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Executando o Backend
+No diretório CDBCalculator.WebApp, abra o terminal e execute:
 
-## Further help
+cd CDBCalculator.WebApp
+dotnet restore
+dotnet build
+dotnet run
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> 9b82e4e (initial commit)
+A API estará acessível em https://localhost:7151/api/investment/calcular
+
+3. Executando o Frontend
+Em outro terminal, navegue até o diretório cdb-calculator e execute:
+
+cd cdb-calculator
+npm install
+ng serve
+
+O frontend estará disponível em http://localhost:4200.
+
+Testando a Solução
+Testes de API (Backend)
+Para testar a API:
+
+Use uma ferramenta como o Postman para fazer requisições.
+
+Faça um POST para https://localhost:7151/api/investment/calcular com o JSON de exemplo:
+
+{
+  "valorInicial": 1000,
+  "prazoMeses": 12
+}
+A resposta deverá conter o valorBruto e valorLiquido do cálculo de CDB.
+
+Testes de Interface (Frontend)
+
+Abra o navegador e acesse http://localhost:4200.
+Preencha os campos de valor inicial e prazo e clique em Calcular.
+Verifique se os resultados bruto e líquido são exibidos corretamente.
+Estrutura de Código e Principais Arquivos
+app.module.ts: Configurações e imports do Angular.
+cdb-calculator-form.component.ts: Componente principal do formulário de cálculo.
+investment.controller.cs: Controlador da API responsável pelo cálculo do CDB.
+
+Para contribuir, siga os passos:
+
+Faça um fork do projeto.
+Crie uma branch com a feature: git checkout -b minha-feature.
+Commit suas mudanças: git commit -m 'Minha nova feature'.
+Push na branch: git push origin minha-feature.
+Abra um Pull Request.
+Observação: Certifique-se de que o backend está rodando com HTTPS, pois o frontend depende dessa configuração para as requisições API.
+
+Este `README.md` cobre a maioria dos aspectos necessários para ajudar outros desenvolvedores a executar e testar o projeto.
+Em caso de dúvida estou aceitando sugestões para melhoras, qualquer dúvida entrar em contato via email saulors@gmail.com ou pelo WhatsApp 81999080095, entrarei em contato o mais breve possível para solucionar qualquer impedimento.
