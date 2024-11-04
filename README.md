@@ -1,6 +1,6 @@
 Executando a aplicação BackEnd:
 
-1 - Acesse o diretório EluminiTeste\cdb-calculator\CDBCalculator.
+1 - Acesse o diretório EluminiTeste\CDB-Solution\CDBCalculator.
 2 - Clique duas vezes com o mouse na solução do Visual Studio 2022 CDBCalculator.
 3 - O Visual Studio irá abrir com a solução e suas respectivas pastas e arquivos.
 4 - Execute a solução clicando em F5 no teclado.
@@ -8,10 +8,10 @@ Executando a aplicação BackEnd:
 
 Executando a aplicação FrontEnd:
 
-1 - Abra o Visual Studio Code e, clique na opção de menu na parte superior em File, Open Folder e siga até o caminho EluminiTeste\cdb-calculator.
+1 - Abra o Visual Studio Code e, clique na opção de menu na parte superior em File, Open Folder e siga até o caminho EluminiTeste\CDB-Solution.
 2 - Irá abrir as pastas e arquivos correspondentes a aplicação.
 3 - Siga até a opção de menu na parte superior em Terminal e selecione New Terminal.
-4 - Com o terminal aberto acesse o caminho C:\EluminiTeste\cdb-calculator> 
+4 - Com o terminal aberto acesse o caminho C:\EluminiTeste\CDB-Solution> 
 5 - E digite ng serve
 6 - A solução irá ser compilada e executada, após ser exibido como resposta no Terminal conforme abaixo:
 
