@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tPKDgY1oZXgwzI8BplwqEVDYOrfPo12RiKrEt3fWYLs=",
+  "Source": "CDBCalculator.WebApi",
+  "BasePath": "_content/CDBCalculator.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

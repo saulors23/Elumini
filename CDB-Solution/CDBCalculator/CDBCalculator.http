@@ -1,0 +1,6 @@
+@CDBCalculator_HostAddress = http://localhost:5062
+
+GET {{CDBCalculator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

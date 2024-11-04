@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container text-center" style="max-width: 400px;">
+        <h2>Cálculo do CDB</h2>
+        <form (ngSubmit)="calcular()">
+            <div class="form-group">
+                <label for="valorInicial">Valor Inicial:</label>
+                <input type="number" [(ngModel)]="request.valorInicial" name="valorInicial" class="form-control" required />
+            </div>
+            <div>&nbsp;</div>
+            <div class="form-group">
+                <label for="prazoMeses">Prazo (meses):</label>
+                <input type="number" [(ngModel)]="request.prazoMeses" class="form-control" id="prazoMeses" name="prazoMeses" required />
+            </div>
+            <div>&nbsp;</div>
+            <div class="btn-group" role="group">
+                <button type="submit" class="btn btn-primary">Calcular</button> &nbsp;&nbsp;
+                <button type="button" class="btn btn-secondary" (click)="clearForm()">Limpar</button>
+            </div>
+        </form>
+    
+        <div *ngIf="result">
+            <h3>Resultados:</h3>
+            <p>Valor Bruto: {{ result.valorBruto| currency: 'BRL' }}</p>
+            <p>Valor Líquido: {{ result.valorLiquido| currency: 'BRL' }}</p>
+        </div>
+    </div>
+</div>
